@@ -1,5 +1,5 @@
-function dis(val){
-    document.getElementById("result").value += val
+function dis(value){
+    document.getElementById("result").value += value;
 }
 
 function myFunction(event){
@@ -11,15 +11,15 @@ var calcu = document.getElementById("cal");
 calcu.onkeyup = function(event){
     if(event.keyCode === 13){
         console.log("Enter");
-        let x = document.getElementById("result").value 
+        let x = document.getElementById("result").value; 
         console.log(x);
     }
 }
 
 function solve(){
-    let x = document.getElementById("result").value
-    let y = math.evaluate(x)
-    document.getElementById("result").value = y
+    let x = document.getElementById("result").value;
+    let y = eval(x);
+    document.getElementById("result").value = y;
 }
 
 function clr(){
